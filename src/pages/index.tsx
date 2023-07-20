@@ -1,7 +1,3 @@
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
     <div>
@@ -9,5 +5,5 @@ export default function Home() {
         Hello Asep
       </div>
     </div>
-  )
+  );
 }
