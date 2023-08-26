@@ -53,6 +53,13 @@ const LoginView = () => {
           </div>
           <button type='submit' className={styles.login__form__item__button} disabled={isLoading}>{isLoading ? "Loading..." : "Login"}</button>
         </form>
+        <button 
+          onClick={() => signIn("google", {
+            redirect: false,
+            callbackUrl,
+          })}
+          className={styles.login__form__item__google}
+        >Sign In With Google</button>
       </div>
       <p className={styles.login__link}>Don{"'"}t have an account? Sign up <Link href="/auth/register">here</Link></p>
     </div>
